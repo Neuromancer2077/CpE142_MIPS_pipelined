@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/ALU.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/ALUControl.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/BranchAdder.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/Control.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/DataMemory.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/IDEX.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/IFID.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/InstructionMemory.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/MEMWB.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/PCAdder.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/ProgramCounter.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/Registers.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/SignExtender.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/SignShift.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/clkdiv.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/exmem.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/mux16.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/top.v"
+verilog xil_defaultlib  "../../../CpE142.srcs/sources_1/new/top_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
