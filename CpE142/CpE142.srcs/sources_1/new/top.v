@@ -22,14 +22,13 @@
 
 module top(clk, rst, debug_override,   
  debug_alu_result_out, debug_pc_out, debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out, 
-debug_regout1, debug_regout2, debug_datamux, debug_id_ex, debug_id_m, debug_id_wb, debug_alucontrolout);
+debug_regout1, debug_regout2, debug_datamux, debug_alucontrolout, debug_mem_wb_out, debug_mem_wreg_out);
 input clk, rst;
 
 input debug_override;
 output [15:0] debug_alu_result_out, debug_pc_out, debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out, debug_regout1, debug_regout2, debug_datamux;
-output debug_id_wb;
-output [4:0] debug_id_ex;
-output [2:0] debug_id_m;
+output debug_mem_wb_out;
+output [3:0] debug_mem_wreg_out;
 output [3:0] debug_alucontrolout;
 wire [15:0] instruction, signex;//instruction mem out
 wire  ALUsrc, wb, zero;//control
@@ -61,16 +60,14 @@ assign pipeline_flush = rst;
 assign debug_alu_result_out = ALUResult;
 assign debug_pc_out = pccurrent;
 assign debug_instruction_out = if_instruction_out;
-assign debug_alu_op2_out = rdata1;
+assign debug_alu_op2_out = id_rdata1_out;
 assign debug_alu_op1_out = aluop2muxout;
 assign debug_regout1 = rdata1;
 assign debug_regout2 = rdata2;
 assign debug_datamux = datamemmuxout;
-assign debug_id_wb = id_wb_out;
-assign debug_id_m = id_m_out;
-assign debug_id_ex = id_ex_out;
+assign debug_mem_wb_out = mem_wb_out;
 assign debug_alucontrolout = alucontrolout;
-
+assign debug_mem_wreg_out = mem_wreg_out;
 
 
 

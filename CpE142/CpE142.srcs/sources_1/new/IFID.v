@@ -46,8 +46,8 @@ begin
     else 
     begin
         pchold = {16{1'b0}};
-        instructionhold = {16{1'b0}};
-        instructionoutTemp = {16{1'b0}};
+        instructionhold = {16{1'bZ}};
+        instructionoutTemp = {16{1'bZ}};
         pcoutTemp = {16{1'b0}};
     
     end

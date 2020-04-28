@@ -35,7 +35,7 @@ assign m = mTemp;
 assign ex = exTemp;
 assign wb = wbTemp;
 
-always @(posedge clk)
+always @(instruction)
 begin
     if(!rst) begin
     case(instruction)
@@ -46,7 +46,7 @@ begin
                     mTemp[2] = 0;
                    exTemp[3:0] <= instruction;                  
                    exTemp[4] <= 1;
-                   wbTemp = 0;                                            
+                   wbTemp = 1;                                            
                 end
         4'b1000:
                 begin
@@ -111,7 +111,7 @@ begin
           
           wbTemp = 0;        
          exTemp[3:0] = 4'b0000;        
-         exTemp[4] = 0;
+         exTemp[4] = 1;
      end           
                 
                         

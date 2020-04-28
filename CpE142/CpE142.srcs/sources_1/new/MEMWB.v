@@ -22,36 +22,45 @@
 
 module MEMWB(clk, rst, wb, rdata, aluresult, wreg, wbout, rdataout, aluresultout, wregout);
 
-input clk, rst, wb, rdata, wreg;
-input [15:0] aluresult;
-output wbout, wregout;
-output[15:0] aluresultout, rdataout;
+input clk, rst, wb;
+input [15:0] aluresult, rdata;
+input [3:0] wreg;
 
+output wbout;
+output[15:0] aluresultout, rdataout;
+output [3:0] wregout;
 
 
 reg wbhold,  zerohold;
-reg[15:0] aluresulthold, rdatahold, wreghold;
+reg[15:0] aluresulthold, rdatahold;
 reg [15:0] branchaddhold;
+reg [3:0] wreghold;
 
 reg wbouttemp;
 reg[15:0] aluresultouttemp, rdataouttemp;
-reg [15:0] branchaddouttemp;
+
 reg[3:0] wregouttemp;
+
 assign wbout = wbouttemp;
 assign aluresultout = aluresultouttemp;
+assign wregout = wregouttemp;
+assign rdataout = rdataouttemp;
 
 always @(posedge clk)
 begin
     if(!rst)
     begin
         wbouttemp = wbhold;
+       // wbouttemp = wb;
         wregouttemp = wreghold;
         aluresultouttemp = aluresulthold;
-        branchaddouttemp = branchaddhold;
+        rdataouttemp = rdatahold;
+        
         
         wbhold = wb;       
         wreghold = wreg;
         aluresulthold = aluresult;
+        rdatahold = rdata;
 
     end
     else
@@ -59,15 +68,13 @@ begin
          wbouttemp = {1{1'b0}};
          wregouttemp = {4{1'b0}};
          aluresultouttemp = {16{1'b0}};
-         branchaddouttemp = {16{1'b0}};
+         rdataouttemp = {16{1'b0}};
          
-         wbhold = {1{1'b0}};
-        
+         wbhold = {1{1'b0}};        
          zerohold = {1{1'b0}};
          wreghold = {4{1'b0}};
          aluresulthold = {16{1'b0}};
-         branchaddhold = {16{1'b0}};
-    
+        rdatahold = {16{1'b0}};
     end
 
 end

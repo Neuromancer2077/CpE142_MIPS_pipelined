@@ -25,7 +25,7 @@ input [15:0] wdata, debug_datain;
 input [15:0] address, debug_address;
 output [15:0] rdata;
 input we, re, clk, debug_we, rst;
-reg [15:0] memory[15:0];
+reg [15:0] memory[256:0];
 reg[15:0] tempread;
 assign rdata = tempread;
 always @(posedge clk) 
@@ -47,9 +47,12 @@ begin
        //memory[16'h0004] = 4'h8000;//lw 0, 0
        //memory[16'h0008] = 4'h8110;//lw 1, 1
        //memory[16'h000C] = 4'h010F;//
-       memory[4] = 16'h010f;
-	   memory[0] = 16'h0000;
-	   memory[8] = 16'h0000;
+       memory[0] = 16'h061e;//sub r6, r1
+       memory[4] = 16'h010f;//add r1, r0
+       memory[8] = 16'h030d;//
+	   memory[12] = 16'h083c;
+	   memory[16] = 16'h0921;
+       memory[20] = 16'h0722;       
                    
     end
     

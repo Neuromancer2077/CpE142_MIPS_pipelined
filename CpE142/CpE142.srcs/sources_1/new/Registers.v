@@ -32,7 +32,7 @@ reg[15:0] tempdata1, tempdata2;
 assign data1 = tempdata1;
 assign data2 = tempdata2;
 
-always@(posedge clk)
+always@(clk or reg1 or reg2)
 begin
     if(rst)
     begin
@@ -43,13 +43,11 @@ begin
          i = i + 4'b0001;
        end    
     end
-    if(!we)
-    begin
-        tempdata1 = register[reg2];
-        tempdata2 = register[reg1];    
+    tempdata1 = register[reg2];
+    tempdata2 = register[reg1];    
     
-    end
-    else 
+    
+    if(we)
     begin
         register[wreg] = wdata;    
     end

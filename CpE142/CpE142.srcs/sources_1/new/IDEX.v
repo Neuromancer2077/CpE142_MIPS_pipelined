@@ -61,6 +61,7 @@ begin
        wbouttemp = wbhold;
        mouttemp = mhold;
        exouttemp = exhold;
+      // exouttemp = ex;
        pcouttemp = pchold;
        rdata1outtemp = rdata1hold;
        rdata2outtemp = rdata2hold;

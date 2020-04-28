@@ -27,7 +27,7 @@ output [3:0] ALUsignal;
 
 reg [3:0] ALUsignalTemp;
 assign ALUsignal = ALUsignalTemp;
-always@(posedge clk)
+always@(ALUop or instruction)
 begin
     case(ALUop)
       4'b0000:

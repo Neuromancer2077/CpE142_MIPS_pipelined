@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Fri Apr 24 17:47:55 2020
-# Process ID: 15424
+# Start of session at: Mon Apr 27 14:57:14 2020
+# Process ID: 14280
 # Current directory: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.runs/synth_1/top.vds

@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -24,24 +24,24 @@ module top_tb();
 reg clk, rst, debug_override;
 
 wire [15:0] debug_pc_out, debug_alu_result_out,  debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out, debug_regout1, debug_regout2, debug_datamux;
-wire [2:0] debug_id_m;
-wire[4:0] debug_id_ex;
-wire debug_id_wb;
-wire [3:0] debug_alucontrolout;
-initial clk = 0;
 
-always #10 clk = !clk;
-
+wire mem_wb_out_wb;
+wire [3:0] debug_alucontrolout, mem_wreg_out;
+initial 
+begin
+clk = 0;
+repeat(5000) #50 clk = !clk;
+end
 top uut(clk, rst, debug_override,
 debug_alu_result_out, debug_pc_out, debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out,  
-debug_regout1, debug_regout2, debug_datamux, debug_id_ex, debug_id_m, debug_id_wb, debug_alucontrolout);
+debug_regout1, debug_regout2, debug_datamux, debug_alucontrolout, mem_wb_out_wb, mem_wreg_out);
 
 initial
 begin
    rst = 1;
    debug_override = 0;
 
- #40;
+ #400;
  /*
  debug_instruction_we = 1;
  debug_data_we = 1;
@@ -71,7 +71,7 @@ begin
   #20;
   */
   rst = 0;
-  #100;
+  #400;
 end
 
 endmodule

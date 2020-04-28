@@ -26,7 +26,7 @@ output[15:0] extended;
 
 reg[15:0] extended;
 wire[3:0] extend;
-always @( posedge clk )
+always @(posedge clk)
 begin
     extended[15:0] <= { {12{extend[3]}}, extend[3:0] };
 end

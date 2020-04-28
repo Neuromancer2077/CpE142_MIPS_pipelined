@@ -22,18 +22,21 @@
 
 module exmem(clk, rst, wb, m, branchadd, zero, aluresult, rdata2, wreg, wbout, mout, branchaddout, zeroout, aluresultout, rdata2out, wregout);
 
-input clk, rst, wb, zero, rdata2, wreg;
+input clk, rst, wb, zero;
 input [2:0] m;
 input [15:0] aluresult;
-input [15:0] branchadd;
-output wbout, mout, zeroout, wregout;
-output[15:0] aluresultout, rdata2out;
-output [3:0] branchaddout;
+input [15:0] branchadd, rdata2;
+input [3:0] wreg;
 
-reg wbhold, zerohold, wreghold;
+output wbout, mout, zeroout;
+output[15:0] aluresultout, rdata2out;
+output [3:0] branchaddout, wregout;
+
+reg wbhold, zerohold;
 reg [15:0] aluresulthold, rdata2hold;
 reg [15:0] branchaddhold;
 reg [2:0] mhold;
+reg [3:0] wreghold;
 
 reg wbouttemp, zeroouttemp;
 reg [15:0] aluresultouttemp, rdata2outtemp;
@@ -47,6 +50,7 @@ assign zeroout = zeroouttemp;
 assign rdata2out = rdata2outtemp;
 assign aluresultout = aluresultouttemp;
 assign branchaddout = branchaddouttemp;
+assign wregout = wregouttemp;
 
 always @(posedge clk)
 begin

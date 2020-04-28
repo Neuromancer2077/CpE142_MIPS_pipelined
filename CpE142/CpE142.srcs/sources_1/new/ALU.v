@@ -31,7 +31,7 @@ reg zerotemp;
 assign out = tempout[15:0];
 assign carryout = tempout[16];
 assign zero = zerotemp;
-always @(posedge clk)
+always @(opcode or op1 or op2 or rst)
 begin
     if(!rst)
     begin
