@@ -30,7 +30,7 @@ input [3:0] wreg;
 
 output wbout, mout, zeroout;
 output[15:0] aluresultout, rdata2out;
-output [3:0] branchaddout, wregout;
+output [15:0] branchaddout, wregout;
 
 reg wbhold, zerohold;
 reg [15:0] aluresulthold, rdata2hold;

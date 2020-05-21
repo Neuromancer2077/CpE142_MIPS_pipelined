@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Mon Apr 27 14:57:14 2020
-# Process ID: 14280
+# Start of session at: Tue May  5 16:32:23 2020
+# Process ID: 4728
 # Current directory: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.runs/synth_1/top.vds
@@ -15,60 +15,69 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50-csga324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50-csga324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15276 
+INFO: Helper process launched with PID 9384 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 314.305 ; gain = 80.359
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 314.461 ; gain = 81.148
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v:23]
 INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ProgramCounter.v:23]
 WARNING: [Synth 8-5788] Register tempcurrent_reg in module ProgramCounter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ProgramCounter.v:28]
-INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ProgramCounter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ProgramCounter.v:23]
 INFO: [Synth 8-638] synthesizing module 'PCAdder' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/PCAdder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'PCAdder' (3#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/PCAdder.v:23]
 INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:23]
-INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (4#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:23]
+WARNING: [Synth 8-567] referenced signal 'debug_we' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 'debug_datain' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 'debug_address' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 'we' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 'wdata' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 're' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:31]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:23]
 INFO: [Synth 8-638] synthesizing module 'IFID' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IFID.v:23]
-INFO: [Synth 8-256] done synthesizing module 'IFID' (5#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IFID.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'pcout' does not match port width (16) of module 'IFID' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:100]
+INFO: [Synth 8-256] done synthesizing module 'IFID' (4#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IFID.v:23]
 INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:23]
-WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:38]
-INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:23]
+WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:40]
+WARNING: [Synth 8-567] referenced signal 'func' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:40]
+INFO: [Synth 8-256] done synthesizing module 'Control' (5#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:23]
 INFO: [Synth 8-638] synthesizing module 'Registers' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:23]
 WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:35]
 WARNING: [Synth 8-567] referenced signal 'we' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:35]
 WARNING: [Synth 8-567] referenced signal 'wdata' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:35]
 WARNING: [Synth 8-567] referenced signal 'wreg' should be on the sensitivity list [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:35]
-INFO: [Synth 8-256] done synthesizing module 'Registers' (7#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Registers' (6#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'reg2' does not match port width (4) of module 'Registers' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:116]
 INFO: [Synth 8-638] synthesizing module 'SignExtender' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignExtender.v:22]
-INFO: [Synth 8-256] done synthesizing module 'SignExtender' (8#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignExtender.v:22]
+INFO: [Synth 8-256] done synthesizing module 'SignExtender' (7#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignExtender.v:22]
+WARNING: [Synth 8-689] width (13) of port connection 'extend' does not match port width (12) of module 'SignExtender' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:117]
 INFO: [Synth 8-638] synthesizing module 'IDEX' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v:23]
-INFO: [Synth 8-256] done synthesizing module 'IDEX' (9#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'pc' does not match port width (16) of module 'IDEX' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:106]
-WARNING: [Synth 8-689] width (4) of port connection 'pcout' does not match port width (16) of module 'IDEX' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:107]
+INFO: [Synth 8-256] done synthesizing module 'IDEX' (8#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-6014] Unused sequential element rotatereg_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:55]
+WARNING: [Synth 8-6014] Unused sequential element opmax_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:57]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:39]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (9#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-638] synthesizing module 'mux16' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/mux16.v:23]
-INFO: [Synth 8-256] done synthesizing module 'mux16' (11#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/mux16.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux16' (10#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/mux16.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ALUControl' (12#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (11#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v:23]
 INFO: [Synth 8-638] synthesizing module 'SignShift' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignShift.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SignShift' (13#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignShift.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignShift' (12#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignShift.v:23]
 INFO: [Synth 8-638] synthesizing module 'BranchAdder' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/BranchAdder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'BranchAdder' (14#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/BranchAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BranchAdder' (13#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/BranchAdder.v:23]
 INFO: [Synth 8-638] synthesizing module 'exmem' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v:23]
 WARNING: [Synth 8-3848] Net rdata2outtemp in module/entity exmem does not have driver. [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v:42]
-INFO: [Synth 8-256] done synthesizing module 'exmem' (15#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v:23]
-WARNING: [Synth 8-689] width (3) of port connection 'mout' does not match port width (1) of module 'exmem' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:115]
-WARNING: [Synth 8-689] width (1) of port connection 'branchaddout' does not match port width (4) of module 'exmem' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:116]
-WARNING: [Synth 8-689] width (1) of port connection 'in2' does not match port width (16) of module 'mux16' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:119]
+INFO: [Synth 8-256] done synthesizing module 'exmem' (14#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'mout' does not match port width (1) of module 'exmem' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:128]
+WARNING: [Synth 8-689] width (4) of port connection 'wregout' does not match port width (16) of module 'exmem' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:129]
 INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/DataMemory.v:23]
-INFO: [Synth 8-256] done synthesizing module 'DataMemory' (16#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (15#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/DataMemory.v:23]
+WARNING: [Synth 8-350] instance 'dm' of module 'DataMemory' requires 10 connections, but only 9 given [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:133]
 INFO: [Synth 8-638] synthesizing module 'MEMWB' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/MEMWB.v:23]
 WARNING: [Synth 8-6014] Unused sequential element zerohold_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/MEMWB.v:74]
-INFO: [Synth 8-256] done synthesizing module 'MEMWB' (17#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/MEMWB.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (18#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MEMWB' (16#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/MEMWB.v:23]
+WARNING: [Synth 8-3848] Net clkcontrol in module/entity top does not have driver. [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:55]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design exmem has unconnected port rdata2out[15]
 WARNING: [Synth 8-3331] design exmem has unconnected port rdata2out[14]
 WARNING: [Synth 8-3331] design exmem has unconnected port rdata2out[13]
@@ -103,24 +112,24 @@ WARNING: [Synth 8-3331] design exmem has unconnected port rdata2[1]
 WARNING: [Synth 8-3331] design exmem has unconnected port rdata2[0]
 WARNING: [Synth 8-3331] design ALUControl has unconnected port clk
 WARNING: [Synth 8-3331] design ALU has unconnected port clk
+WARNING: [Synth 8-3331] design SignExtender has unconnected port clk
 WARNING: [Synth 8-3331] design Registers has unconnected port clk
 WARNING: [Synth 8-3331] design Control has unconnected port clk
-WARNING: [Synth 8-3331] design top has unconnected port debug_override
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 383.441 ; gain = 149.496
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 388.605 ; gain = 155.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 383.441 ; gain = 149.496
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 388.605 ; gain = 155.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 383.441 ; gain = 149.496
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 388.605 ; gain = 155.293
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7s50csga324-1
-INFO: [Synth 8-5546] ROM "tempout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[256]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[256]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[255]" won't be mapped to RAM because it is too sparse
@@ -220,47 +229,127 @@ INFO: [Synth 8-5546] ROM "memory_reg[209]" won't be mapped to RAM because it is 
 INFO: [Synth 8-5546] ROM "memory_reg[208]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[208]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[207]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[207]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "register_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "register_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "register_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'exTemp_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:35]
-WARNING: [Synth 8-327] inferring latch for variable 'wbTemp_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:36]
-WARNING: [Synth 8-327] inferring latch for variable 'mTemp_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[15]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[14]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[13]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[12]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[11]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[10]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[9]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[8]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[7]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[6]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[5]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[4]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[3]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[2]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[1]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'register_reg[0]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'i_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:39]
-WARNING: [Synth 8-327] inferring latch for variable 'zerotemp_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUsignalTemp_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v:29]
+INFO: [Synth 8-5545] ROM "rreg2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rreg20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rreg21" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "signexin6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'tempread_reg' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[256]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[255]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[254]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[253]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[252]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[251]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[250]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[249]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[248]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[247]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[246]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[245]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[244]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[243]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[242]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[241]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[240]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[239]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[238]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[237]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[236]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[235]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[234]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[233]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[232]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[231]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[230]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[229]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[228]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[227]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[226]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[225]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[224]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[223]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[222]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[221]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[220]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[219]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[218]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[217]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[216]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[215]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[214]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[213]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[212]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[211]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[210]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[209]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[208]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[207]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[206]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[205]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[204]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[203]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[202]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[201]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[200]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[199]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[198]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[197]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[196]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[195]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[194]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[193]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[192]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[191]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[190]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[189]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[188]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[187]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[186]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[185]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[184]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[183]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[182]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[181]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[180]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[179]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[178]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[177]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[176]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[175]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[174]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[173]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[172]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[171]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[170]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[169]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[168]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[167]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[166]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[165]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[164]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[163]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[162]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[161]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[160]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[159]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[158]' [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/InstructionMemory.v:35]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 497.953 ; gain = 264.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 500.641 ; gain = 267.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,34 +366,32 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 1     
 	   3 Input     17 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 16    
 	   2 Input      4 Bit       Adders := 15    
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
 +---Registers : 
-	               16 Bit    Registers := 279   
-	                8 Bit    Registers := 1     
+	               16 Bit    Registers := 36    
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 4     
-	                1 Bit    Registers := 9     
-+---RAMs : 
-	              256 Bit         RAMs := 1     
+	                1 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input     17 Bit        Muxes := 1     
-	  10 Input     17 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 279   
+	  15 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 340   
 	   3 Input     16 Bit        Muxes := 8     
-	   2 Input      8 Bit        Muxes := 1     
+	   8 Input     13 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
-	   9 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 6     
 	   9 Input      4 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 537   
-	   3 Input      1 Bit        Muxes := 265   
-	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 562   
+	   3 Input      1 Bit        Muxes := 281   
+	   9 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -312,16 +399,13 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module clkdiv 
+Module top 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   8 Input     13 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
 Module ProgramCounter 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -334,8 +418,6 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit       Adders := 1     
 Module InstructionMemory 
 Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 258   
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 257   
@@ -349,10 +431,10 @@ Detailed RTL Component Info :
 Module Control 
 Detailed RTL Component Info : 
 +---Muxes : 
+	  10 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
-	   9 Input      5 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 1     
 Module Registers 
 Detailed RTL Component Info : 
@@ -360,15 +442,11 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit       Adders := 16    
 	   2 Input      4 Bit       Adders := 15    
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 262   
+	   2 Input     16 Bit        Muxes := 292   
 	   3 Input     16 Bit        Muxes := 8     
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 278   
+	   2 Input      1 Bit        Muxes := 288   
 	   3 Input      1 Bit        Muxes := 8     
-Module SignExtender 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
 Module IDEX 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -387,9 +465,12 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     17 Bit       Adders := 1     
 	   3 Input     17 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
 +---Muxes : 
-	   2 Input     17 Bit        Muxes := 1     
-	  10 Input     17 Bit        Muxes := 1     
+	  15 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 32    
+	  14 Input      1 Bit        Muxes := 4     
 Module mux16 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -417,12 +498,11 @@ Detailed RTL Component Info :
 Module DataMemory 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 1     
-+---RAMs : 
-	              256 Bit         RAMs := 1     
+	               16 Bit    Registers := 17    
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 16    
 Module MEMWB 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -448,217 +528,215 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:42]
-WARNING: [Synth 8-6014] Unused sequential element feqdiv/count_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v:35]
-WARNING: [Synth 8-6014] Unused sequential element feqdiv/tempout_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v:28]
-WARNING: [Synth 8-6014] Unused sequential element s2/pchold_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v:65]
-WARNING: [Synth 8-6014] Unused sequential element s2/pcouttemp_reg was removed.  [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v:50]
-DSP Report: Generating DSP alu/tempout0, operation Mode is: A2*B.
-DSP Report: register s2/rdata1outtemp_reg is absorbed into DSP alu/tempout0.
-DSP Report: operator alu/tempout0 is absorbed into DSP alu/tempout0.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:43]
+DSP Report: Generating DSP tempout0, operation Mode is: A*B.
+DSP Report: operator tempout0 is absorbed into DSP tempout0.
+WARNING: [Synth 8-3917] design top has port debug_signshiftout[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port debug_signshiftout[0] driven by constant 0
+WARNING: [Synth 8-3331] design ALU has unconnected port clk
 WARNING: [Synth 8-3331] design Registers has unconnected port clk
-WARNING: [Synth 8-3331] design top has unconnected port debug_override
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/mTemp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[256][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[255][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[254][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[253][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[252][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[251][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[250][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[249][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[248][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[247][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[246][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[245][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[244][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[243][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[242][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[241][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[240][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[239][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[238][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[237][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[236][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[235][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[234][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[233][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[232][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[231][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[230][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[229][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[228][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[227][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[226][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[225][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[224][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[223][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[222][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[221][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[220][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[219][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[218][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[217][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[216][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[215][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[214][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[213][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[212][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[211][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[210][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[209][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[208][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[207][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[206][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[205][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[204][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[203][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[202][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[201][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[200][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[199][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[198][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[197][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[196][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[195][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[194][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[193][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[192][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[191][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[190][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[189][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[188][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[187][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[186][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[185][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[184][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[183][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[182][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[181][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[180][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[179][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[178][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[177][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[176][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[175][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[174][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[173][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[172][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[171][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[170][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[169][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[168][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[167][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[166][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[165][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[164][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[163][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[162][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[161][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[160][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[159][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (im/\memory_reg[158][0] )
+WARNING: [Synth 8-3331] design InstructionMemory has unconnected port clk
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dm/memory_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dm/memory_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dm/memory_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[11][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[10][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[9][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[7][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dm/memory_reg[12][6] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][0]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][0]' (FDSE) to 'im/memory_reg[4][0]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][0]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][0]' (FDSE) to 'im/memory_reg[4][0]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][0]' (FDSE) to 'im/memory_reg[4][1]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][0]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][1]' (FDSE) to 'im/memory_reg[4][1]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][1]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][1]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][1]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][1]' (FDSE) to 'im/memory_reg[4][2]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][1]' (FDSE) to 'im/memory_reg[4][2]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][2]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][2]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][2]' (FDSE) to 'im/memory_reg[4][2]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][2]' (FDSE) to 'im/memory_reg[4][2]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][2]' (FDSE) to 'im/memory_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][2]' (FDSE) to 'im/memory_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][3]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][3]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][3]' (FDSE) to 'im/memory_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][3]' (FDSE) to 'im/memory_reg[4][3]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][3]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][3]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][4]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][4]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][4]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][4]' (FDRE) to 'im/memory_reg[4][4]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][4]' (FDRE) to 'im/memory_reg[4][5]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][4]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][5]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][5]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][5]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][5]' (FDRE) to 'im/memory_reg[4][5]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][5]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][5]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][6]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][6]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][6]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][6]' (FDRE) to 'im/memory_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][6]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][6]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][7]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][7]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][7]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][7]' (FDRE) to 'im/memory_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][7]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][7]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][8]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][8]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][8]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][8]' (FDSE) to 'im/memory_reg[4][8]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][8]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][8]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][9]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][9]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][9]' (FDRE) to 'im/memory_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][9]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][9]' (FDRE) to 'im/memory_reg[4][10]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][9]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][10]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][10]' (FDRE) to 'im/memory_reg[4][10]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][10]' (FDRE) to 'im/memory_reg[4][10]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][10]' (FDRE) to 'im/memory_reg[4][10]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][10]' (FDRE) to 'im/memory_reg[4][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][10]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][11]' (FDRE) to 'im/memory_reg[4][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][11]' (FDSE) to 'im/memory_reg[12][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][11]' (FDRE) to 'im/memory_reg[4][11]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][11]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][11]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][12]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][12]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][12]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][12]' (FDRE) to 'im/memory_reg[4][12]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][12]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][12]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][13]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][13]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][13]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][13]' (FDRE) to 'im/memory_reg[4][13]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][13]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][13]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][14]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][14]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][14]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][14]' (FDRE) to 'im/memory_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][14]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][14]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][15]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][15]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][15]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][15]' (FDRE) to 'im/memory_reg[4][15]'
-INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][15]' (FDRE) to 'im/memory_reg[0][15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[3]' (FD) to 'se/extended_reg[15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[4]' (FD) to 'se/extended_reg[15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[5]' (FD) to 'se/extended_reg[15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[6]' (FD) to 'se/extended_reg[15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[7]' (FD) to 'se/extended_reg[15]'
-INFO: [Synth 8-3886] merging instance 'se/extended_reg[8]' (FD) to 'se/extended_reg[15]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[50][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[48][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[46][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[44][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[42][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[40][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[38][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[36][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[34][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[32][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[30][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[28][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[26][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[24][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[22][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[18][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[14][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[10][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[6][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][0]' (LDC) to 'im/memory_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[2][0]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][0]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[50][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[48][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[46][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[44][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[42][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[40][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[38][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[36][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[34][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[32][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[30][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[28][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[26][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[24][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[22][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[18][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[14][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[10][1]' (LDP) to 'im/memory_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[6][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][1]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[2][1]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][1]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[50][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[48][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[46][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[44][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[42][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[40][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[38][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[36][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[34][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[32][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[30][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[28][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[26][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[24][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[22][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[18][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[14][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[10][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][2]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[6][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[4][2]' (LDP) to 'im/memory_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[2][2]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[0][2]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[50][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[48][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[46][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[44][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[42][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[40][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[38][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[36][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[34][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[32][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[30][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[28][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[26][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[24][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[22][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[20][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[18][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[16][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[14][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[12][3]' (LDP) to 'im/memory_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[10][3]' (LDC) to 'im/memory_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'im/memory_reg[8][3]' (LDC) to 'im/memory_reg[2][4]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (memory_reg[256][15]) is unused and will be removed from module InstructionMemory.
 WARNING: [Synth 8-3332] Sequential element (memory_reg[256][14]) is unused and will be removed from module InstructionMemory.
@@ -762,7 +840,7 @@ WARNING: [Synth 8-3332] Sequential element (memory_reg[250][13]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (memory_reg[250][12]) is unused and will be removed from module InstructionMemory.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -772,7 +850,7 @@ DSP: Preliminary Mapping  Report (see note below)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|top         | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -790,7 +868,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -802,7 +880,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -826,7 +904,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -839,7 +917,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -851,25 +929,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -879,8 +957,12 @@ Static Shift Register Report:
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | s3/branchaddouttemp_reg[0]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | s2/pcouttemp_reg[15]        | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|top         | s3/mouttemp_reg[0]          | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | s3/wregouttemp_reg[0]       | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
 |top         | s4/wbouttemp_reg            | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|top         | s4/wregouttemp_reg[3]       | 6      | 4     | YES          | NO                 | YES               | 4      | 0       | 
+|top         | s4/wregouttemp_reg[3]       | 6      | 3     | YES          | NO                 | YES               | 3      | 0       | 
 |top         | s4/aluresultouttemp_reg[15] | 4      | 16    | YES          | NO                 | YES               | 16     | 0       | 
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
@@ -901,24 +983,24 @@ Report Cell Usage:
 +------+--------+------+
 |      |Cell    |Count |
 +------+--------+------+
-|1     |BUFG    |     1|
-|2     |CARRY4  |    92|
+|1     |BUFG    |     2|
+|2     |CARRY4  |   132|
 |3     |DSP48E1 |     1|
-|4     |LUT1    |     3|
-|5     |LUT2    |   162|
-|6     |LUT3    |    70|
-|7     |LUT4    |    45|
-|8     |LUT5    |   271|
-|9     |LUT6    |   280|
-|10    |MUXF7   |    64|
-|11    |MUXF8   |    32|
-|12    |SRL16E  |    21|
-|13    |FDPE    |    15|
-|14    |FDRE    |   176|
-|15    |LD      |   265|
-|16    |LDC     |    16|
+|4     |LUT1    |    34|
+|5     |LUT2    |   464|
+|6     |LUT3    |   324|
+|7     |LUT4    |   235|
+|8     |LUT5    |   410|
+|9     |LUT6    |   362|
+|10    |MUXF7   |    71|
+|11    |MUXF8   |    16|
+|12    |SRL16E  |    38|
+|13    |FDPE    |    16|
+|14    |FDRE    |   257|
+|15    |LD      |   282|
+|16    |LDC     |    36|
 |17    |IBUF    |     2|
-|18    |OBUF    |   105|
+|18    |OBUF    |   138|
 |19    |OBUFT   |    32|
 +------+--------+------+
 
@@ -926,40 +1008,42 @@ Report Instance Areas:
 +------+----------+------------------+------+
 |      |Instance  |Module            |Cells |
 +------+----------+------------------+------+
-|1     |top       |                  |  1653|
-|2     |  alu     |ALU               |   264|
-|3     |  aluc    |ALUControl        |    82|
-|4     |  c       |Control           |     6|
-|5     |  datamux |mux16             |    16|
-|6     |  im      |InstructionMemory |    21|
-|7     |  pc      |ProgramCounter    |    61|
-|8     |  pcadder |PCAdder           |    34|
-|9     |  r       |Registers         |   480|
-|10    |  s1      |IFID              |    66|
-|11    |  s2      |IDEX              |   354|
-|12    |  s3      |exmem             |    23|
-|13    |  s4      |MEMWB             |   101|
-|14    |  se      |SignExtender      |     4|
+|1     |top       |                  |  2852|
+|2     |  alumux  |mux16             |    62|
+|3     |  ba      |BranchAdder       |     4|
+|4     |  alu     |ALU               |    34|
+|5     |  aluc    |ALUControl        |    44|
+|6     |  c       |Control           |     9|
+|7     |  datamux |mux16_0           |    16|
+|8     |  im      |InstructionMemory |    40|
+|9     |  pc      |ProgramCounter    |    67|
+|10    |  pcadder |PCAdder           |     4|
+|11    |  r       |Registers         |   576|
+|12    |  s1      |IFID              |   119|
+|13    |  s2      |IDEX              |  1309|
+|14    |  s3      |exmem             |    96|
+|15    |  s4      |MEMWB             |   281|
 +------+----------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4209 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 566.734 ; gain = 332.789
+Synthesis finished with 0 errors, 0 critical warnings and 4349 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 575.918 ; gain = 342.605
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 376 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 453 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 281 instances were transformed.
-  LD => LDCE: 265 instances
-  LDC => LDCE: 16 instances
+  A total of 318 instances were transformed.
+  LD => LDCE: 266 instances
+  LD => LDCE (inverted pins: G): 16 instances
+  LDC => LDCE: 36 instances
 
-365 Infos, 179 Warnings, 0 Critical Warnings and 0 Errors encountered.
+364 Infos, 268 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 580.293 ; gain = 354.113
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 593.219 ; gain = 366.871
 INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 580.293 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 27 14:57:50 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 593.219 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 16:33:02 2020...

@@ -29,7 +29,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignExtender.v
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignShift.v
-  C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/mux16.v
   C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v

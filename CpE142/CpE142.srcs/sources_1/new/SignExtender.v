@@ -20,15 +20,31 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module SignExtender( clk, extend, extended );
-input[3:0] extend;
+input[11:0] extend;
 input clk;
 output[15:0] extended;
 
 reg[15:0] extended;
-wire[3:0] extend;
-always @(posedge clk)
+wire[11:0] extend;
+always @(clk or extend)
 begin
-    extended[15:0] <= { {12{extend[3]}}, extend[3:0] };
+    if(extend[4] === 1'bz)
+    begin    
+        extended[15:0] <= { {12{extend[3]}}, extend[3:0] };
+    end
+    else if(extend[8] === 1'bz)
+    begin
+        extended[15:0] <= { {8{extend[7]}}, extend[7:0] };
+    end
+    else
+    begin
+        extended[15:0] <= { {4{extend[11]}}, extend[11:0] };
+    end
+    
+    
+    
+    
+    
 end
 
 endmodule

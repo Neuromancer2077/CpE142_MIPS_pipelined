@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Tue May  5 15:47:38 2020
+# Process ID: 19636
+# Current directory: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20144 C:\Users\admin\Documents\projects\CpE142_pipeline\CpE142\CpE142.xpr
+# Log file: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/vivado.log
+# Journal file: C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top_tb.tcl
+update_compile_order -fileset sources_1
+reset_run synth_1
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim

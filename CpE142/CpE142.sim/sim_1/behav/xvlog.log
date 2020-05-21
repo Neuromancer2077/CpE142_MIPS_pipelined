@@ -1,6 +1,6 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:37]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALU.v:40]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALUControl
 WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/ALUControl.v:31]
@@ -8,7 +8,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/C
 INFO: [VRFC 10-311] analyzing module BranchAdder
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Control
-WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:40]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Control.v:42]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DataMemory
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
@@ -25,23 +25,22 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/C
 INFO: [VRFC 10-311] analyzing module ProgramCounter
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Registers
-WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:55]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/Registers.v:67]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignExtender
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/SignShift.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignShift
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/clkdiv.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clkdiv
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/exmem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module exmem
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/mux16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mux16
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-WARNING: [VRFC 10-756] identifier if_instruction_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:62]
-WARNING: [VRFC 10-756] identifier id_rdata1_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:63]
-WARNING: [VRFC 10-756] identifier mem_wb_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:68]
-WARNING: [VRFC 10-756] identifier mem_wreg_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:70]
+WARNING: [VRFC 10-756] identifier if_instruction_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-756] identifier id_rdata1_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:67]
+WARNING: [VRFC 10-756] identifier mem_wb_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:72]
+WARNING: [VRFC 10-756] identifier mem_wreg_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:74]
+WARNING: [VRFC 10-756] identifier ex_branchadd_out is used before its declaration [C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top.v:75]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.srcs/sources_1/new/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Documents/projects/CpE142_pipeline/CpE142/CpE142.sim/sim_1/behav/glbl.v" into library xil_defaultlib

@@ -29,14 +29,17 @@ assign current = tempcurrent;
 
 always@(posedge clk or posedge rst)
 begin
-    if(!rst)
-    begin
-        tempcurrent <= next;
-    end
-    else 
-    begin
-        tempcurrent = {16{1'b0}};
-    end
+   
+    
+        if(!rst)
+        begin
+            tempcurrent <= next;
+        end
+        else 
+        begin
+            tempcurrent = {16{1'b0}};
+        end
+   
 end
 
 

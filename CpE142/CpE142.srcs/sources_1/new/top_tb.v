@@ -21,25 +21,25 @@
 
 
 module top_tb();
-reg clk, rst, debug_override;
+reg clk, rst;
 
-wire [15:0] debug_pc_out, debug_alu_result_out,  debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out, debug_regout1, debug_regout2, debug_datamux;
+wire [15:0] debug_pc_out, debug_alu_result_out,  debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out, debug_regout1, debug_regout2, debug_datamux, debug_ex_branchadd_out, debug_signshiftout;
 
-wire mem_wb_out_wb;
+wire mem_wb_out_wb, debug_branchand;
 wire [3:0] debug_alucontrolout, mem_wreg_out;
 initial 
 begin
 clk = 0;
 repeat(5000) #50 clk = !clk;
 end
-top uut(clk, rst, debug_override,
+top uut(clk, rst,
 debug_alu_result_out, debug_pc_out, debug_instruction_out, debug_alu_op2_out, debug_alu_op1_out,  
-debug_regout1, debug_regout2, debug_datamux, debug_alucontrolout, mem_wb_out_wb, mem_wreg_out);
+debug_regout1, debug_regout2, debug_datamux, debug_alucontrolout, mem_wb_out_wb, mem_wreg_out, debug_branchand, debug_ex_branchadd_out, debug_signshiftout);
 
 initial
 begin
    rst = 1;
-   debug_override = 0;
+   
 
  #400;
  /*

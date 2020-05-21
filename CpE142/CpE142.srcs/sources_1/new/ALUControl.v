@@ -40,20 +40,23 @@ begin
                   end
           4'b1011:
                   begin
-                    
+                    ALUsignalTemp = 4'b1111;
                   end
           4'b0100:
                   begin
-                  
+                  ALUsignalTemp = 4'b0000;
                   end
           4'b0101:
                   begin
+                  ALUsignalTemp = 4'b0110;
                   end
           4'b0110:
                   begin
+                     ALUsignalTemp = 4'b1101;
                   end
           4'b1100:
                   begin
+                  ALUsignalTemp = 4'b0100;
                   end
           4'b1111:
                   begin
