@@ -84,7 +84,7 @@ I went through many rounds of testing, in a way I was following a SCRUM developm
  
 My final Test bench:
 
- ![blockdiagram_cpu](https://github.com/TheProgrammingWizzard/CpE142_MIPS_pipelined/blob/master/imgs/12.png)
+ ![blockdiagram_cpu](https://github.com/TheProgrammingWizzard/CpE142_MIPS_pipelined/blob/master/imgs/11.png)
  
 Debug signals 
 
