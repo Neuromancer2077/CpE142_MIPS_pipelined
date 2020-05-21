@@ -14,6 +14,7 @@ For my design I turned to our class book for guidance. I started by building the
  ![blockdiagram_cpu](https://github.com/TheProgrammingWizzard/CpE142_MIPS_pipelined/blob/master/imgs/2.png)
  
 Image Source: (Patterson et al., 2019)
+
 Once I had all of these components connected and working with a single operation I saw the need for a pipeline. Some of the issues I saw with a non-pipelined processor were propagation issues. 
 For example with the add instruction (“010f” below) from the point the instruction was read off memory and fed into the registers and control unit it took 2 clock cycles for the registers to output the content of the registers and 3 clock cycles for the ALU to have the result.
 
@@ -22,7 +23,8 @@ For example with the add instruction (“010f” below) from the point the instr
  These propagation delays cause inefficiencies in how our professor works. We can eliminate these inefficiencies by adding registers between the stages of our processor. The resulting design below: 
 
  ![blockdiagram_cpu](https://github.com/TheProgrammingWizzard/CpE142_MIPS_pipelined/blob/master/imgs/4.png)
-                   Image Source: (Patterson et al., 2019)
+                   
+				   Image Source: (Patterson et al., 2019)
 				   
  This design allows us to fill in those propagation delays with operations. To facilitate this each state needs to have all of the information of it’s current operation. The above image is a 32 bit instruction length MIPS processor so there are some differences in the bit lengths of this project’s design vs the design in the book but the fundamentals are the same. 
 In order to run my simulation I have my instruction memory, registers and data memory preload during the reset active state in accordance with the project instructions.
@@ -102,5 +104,6 @@ Debug_alucontrolout –this is the output of the ALU Control that controls the o
 Mem_wreg_out – this is the write back register output from MEM/WB
 
 Bibliography
+
 D. A. Patterson and J. L. Hennessy, “Chapter 4,” in Computer organization and design: the hardware/software interface, Brantford, Ontario: W. Ross MacDonald School Resource Services Library, 2019.
 
