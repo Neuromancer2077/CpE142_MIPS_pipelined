@@ -13,7 +13,7 @@ For my design I turned to our class book for guidance. I started by building the
  
  ![blockdiagram_cpu](https://github.com/TheProgrammingWizzard/CpE142_MIPS_pipelined/blob/master/imgs/2.png)
  
-Image Source: (Patterson et al., 2019)
+					Image Source: (Patterson et al., 2019)
 
 Once I had all of these components connected and working with a single operation I saw the need for a pipeline. Some of the issues I saw with a non-pipelined processor were propagation issues. 
 For example with the add instruction (“010f” below) from the point the instruction was read off memory and fed into the registers and control unit it took 2 clock cycles for the registers to output the content of the registers and 3 clock cycles for the ALU to have the result.
